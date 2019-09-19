@@ -112,8 +112,9 @@
 \end{equation}
 \subsubsection{Polar Moment of Inertia Solid Shaft}
 \begin{equation}
-    J=\frac{1}{2}\pi^4
+    J=\frac{1}{2}\pi c^4
 \end{equation}
+c = radius
 \subsubsection{Polar Moment of Inertia of a Hollow Shaft inner radius c1, outer radius c2}
 \begin{equation}
     J=\frac{1}{2}\pi(c_2^4-c_2^4)
@@ -127,15 +128,22 @@
 \end{equation}
 \subsection{Statically Indeterminante Shafts}
 \subsection{Transmission Shafts}
-Poswer P is transmitted as:
+Power P is transmitted as:
 \begin{equation}
     P=2\pi fT
 \end{equation}
+T is the torque exerted at each end of the shaft\\*
+f the frequency (hz or $s^{-1}$)
 \subsection{Stress Concentrations}
 \begin{equation}
     \tau_{\text{max}}=K\frac{Tc}{J}
-    \text{K = Stress concentration factor}
 \end{equation}
+K = Stress concentration factor\\*
+stress $\frac{Tc}{J}$ is computed for the smaller-diameter shaft
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth, height=8cm]{PlotStressConcentrationsFilletsRoundShaft.png}
+\end{Figure}
 \subsection{Plastic Deformations}
 \begin{equation}
     T=\int^c_0\rho\tau(2\pi d\rho)=2\pi\int^c_0\rho^2\tau d\rho
