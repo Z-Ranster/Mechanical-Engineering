@@ -43,7 +43,7 @@
 
 % Area Above Columns
 \begin{center}
-     \Large{\underline{Solid Mechanics - Zak Olech - 9/10/2019}}
+     \Large{\underline{Solid Mechanics - Zak Olech - 9/24/2019}}
 \end{center}
 \begin{multicols}{3}
 
@@ -85,8 +85,120 @@
 \end{Figure}
 % -----------------------------------------------------------------------
 \section{Chapter 1 - Concept of stress}
+\subsection{Axial Loading: Normal Stress}
+\begin{equation}
+    \sigma=\frac{P}{A}
+\end{equation}
+\subsection{Transverse Forces and Shearing Stress}
+\begin{equation}
+    \tau_{\text{ave}}=\frac{P}{A}
+\end{equation}
+\subsection{Single and Double Shear}
+\subsubsection{Single Shear}
+\begin{equation}
+    \tau_{\text{avg}}=\frac{P}{A}=\frac{F}{A}
+\end{equation}
+\subsubsection{Double Shear}
+\begin{equation}
+    \tau_{\text{avg}}=\frac{P}{A}=\frac{F/2}{A}=\frac{F}{2A}    
+\end{equation}
+\subsection{Bearing Stress}
+\begin{equation}
+    \sigma_b=\frac{P}{A}=\frac{P}{td}
+\end{equation}
+\subsection{Method of Solution}
+\begin{enumerate}
+  \item Clear and precise statement of problem
+  \item Draw one or several free-body diagrams; used to write equilibrium equations
+  \item Think SMART. Strategy, Modeling, Analysis, and Reflect \& Think
+\end{enumerate}
+\subsection{Stresses on an Oblique Section}
+\begin{equation}
+    \sigma=\frac{P}{A_0}cos^2\theta
+\end{equation}
+\begin{equation}
+    \tau=\frac{P}{A_0}sin\theta cos\theta
+\end{equation}
+\section{Stress Under General Loading}
+\section{Factor of Safety}
+\begin{equation}
+    \text{Factor of safety }=\text{ F.S. }=\frac{\text{ultimate load}}{\text{allowable load}}
+\end{equation}
 
 \section{Chapter 2 - Stress and Strain - Axial Loading}
+\subsection{Normal Strain}
+\begin{equation}
+    \epsilon=\frac{\delta}{L}
+\end{equation}
+\subsection{Hooke's Law and Modulus of Elasticity}
+\begin{equation}
+    \sigma=E\epsilon
+\end{equation}
+\subsection{Elastic Deformation Under Axial Loading}
+\begin{equation}
+    \delta=\frac{PL}{AE}
+\end{equation}
+\begin{equation}
+    \delta=\Sigma=\frac{P_iL_i}{A_iE_i}
+\end{equation}
+\subsection{Problems with Temperature Change}
+\begin{equation}
+    \delta_T=\alpha(\Delta T)L     
+\end{equation}
+\begin{equation}
+    \epsilon_T=\alpha\Delta T
+\end{equation}
+\subsection{Lateral Strain and Poisson's Ratio}
+\begin{equation}
+    v=-\frac{\text{lateral strain}}{\text{axial strain}}
+\end{equation}
+\subsection{Multiaxial Loading}
+\begin{equation}
+    \epsilon_x=\frac{\sigma_x}{E}
+\end{equation}
+\begin{equation}
+    \sigma_y=\sigma_x=-\frac{v\sigma_x}{E}
+\end{equation}
+\subsubsection{Generalized Hooke's law for multiaxial loading}
+\begin{equation}
+    \sigma_x=+\frac{\sigma_x}{E}-\frac{v\sigma_y}{E}-\frac{v\sigma_z}{E}
+\end{equation}
+\begin{equation}
+    \sigma_y=-\frac{\sigma_x}{E}-\frac{v\sigma_y}{E}-\frac{v\sigma_z}{E}
+\end{equation}
+\begin{equation}
+    \sigma_z=-\frac{\sigma_x}{E}-\frac{v\sigma_y}{E}+\frac{v\sigma_z}{E}
+\end{equation}
+\subsection{Dilation}
+\begin{equation}
+    e=\frac{1-2v}{E}(\sigma_x+\sigma_y+\sigma_z)
+\end{equation}
+\subsection{Bulk Modulus}
+$p$: Hydrostatic Pressure
+\begin{equation}
+    e=-\frac{p}{k}
+\end{equation}
+$k$: bulk modulus of the material
+\begin{equation}
+    k=\frac{E}{3(1-2v)}
+\end{equation}
+\subsection{Shearing Strain: Modulus of Rigidity}
+\begin{equation}
+    \tau_{xy}=G\gamma_{xy}
+\end{equation}
+\begin{equation}
+    \tau_{yz}=G\gamma{yz}
+\end{equation}
+\begin{equation}
+    \tau_{zx}=G\gamma_{zx}
+\end{equation}
+\begin{equation}
+    \frac{E}{2G}=1+v
+\end{equation}
+\subsection{Stress Concentrations}
+\begin{equation}
+    K=\frac{\sigma_\text{max}}{\sigma_\text{avg}}
+\end{equation}
 
 \section{Chapter 3 - Torsion}
 \subsection{General}
@@ -183,6 +295,76 @@ This is a ficticious value.
 \begin{equation}
     \tau=\frac{T}{2tA}
 \end{equation}
+
+\section{Chapter 4 - Pure Bending}
+\subsection{1 - Symmetric Members in Pure Bending}
+\begin{equation}
+    \epsilon_x=-\frac{y}{\rho}
+\end{equation}
+$\rho$ - Radius of curvature of the neutral surface\\*
+$y$ - Distance from neutral surface
+\subsection{2 - Stresses and Deformatoins in the Elastic Range}
+\begin{equation}
+    \sigma_x=-\frac{y}{c}\sigma_m
+\end{equation}
+c - largest distance from the neutral axis to a point in the section\\*
+\subsubsection{Elastic Flexture formula}
+\begin{equation}
+    \sigma_m=\frac{Mc}{I}
+\end{equation}
+\begin{equation}
+    \sigma_x=-\frac{My}{I}
+\end{equation}
+\subsubsection{Eleastic Section Modulus}
+\begin{equation}
+    S=\frac{I}{c}
+\end{equation}
+\begin{equation}
+    \sigma_m=\frac{M}{S}
+\end{equation}
+\subsubsection{Curvature of Member}
+\begin{equation}
+    \frac{1}{\rho}=\frac{M}{EI}
+\end{equation}
+\subsection{Eccentric Axial Loading}
+\begin{equation}
+    \sigma_x=\frac{P}{A}-\frac{M_y}{I}    
+\end{equation}
+\subsection{Unsymmetric Bending}
+\begin{equation}
+    \sigma_x=-\frac{M_zy}{I_z}+\frac{M_yz}{I_y}
+\end{equation}
+\subsection{General Eccentric Axial Loading}
+\begin{equation}
+    \sigma_x=\frac{P}{A}-\frac{M_zy}{I_z}+\frac{M_yZ}{I_y}
+\end{equation}
+\subsection{Curved Members}
+\begin{equation}
+    R=\frac{A}{\int\frac{dA}{r}}
+\end{equation}
+\begin{equation}
+    \sigma_x=-\frac{My}{Ae(R-y)}
+\end{equation}
+\subsection{Additional Notes}
+Area, width, and moment of inertia for W shapes should be given on a test or found in appendix c of textbook.
+
+%\subsection{3 - Deformations in a Transverse Cross Section}
+%\subsection{4 - Members Made of Composite Materials}
+%\subsection{5 - Stress Concentrations}
+%\subsection{6 - Plastic Deformations}
+%\subsection{7 - Eccentric Axial Loading in a Plane of Symmetry}
+%\subsection{8 - Unsymmetric Bending Analysis}
+%\subsection{9 - General Case of Eccentric Axial Loading Analysis}
+%\subsection{10 - Curved Members}
+
+
+
+
+
+
+
+
+
 
 % Example Figure
 %\begin{Figure}
