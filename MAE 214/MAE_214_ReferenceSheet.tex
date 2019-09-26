@@ -90,6 +90,10 @@
 \begin{equation}
     I_x=bh^3/12
 \end{equation}
+\subsection{Parallel Axis Theorm (2-Dimensional)}
+\begin{equation}
+    I=I_{\text{Original}}+Ad^2
+\end{equation}
 
 % -----------------------------------------------------------------------
 \section{Chapter 1 - Concept of stress}
@@ -320,9 +324,12 @@ c - largest distance from the neutral axis to a point in the section\\*
 \begin{equation}
     \sigma_m=\frac{Mc}{I}
 \end{equation}
+Equation To Use When Finding Normal Internal Stress
 \begin{equation}
     \sigma_x=-\frac{My}{I}
 \end{equation}
+$-\sigma$ -- Compression\\*
+ $\sigma$ -- Tension
 \subsubsection{Eleastic Section Modulus}
 \begin{equation}
     S=\frac{I}{c}
@@ -352,6 +359,22 @@ c - largest distance from the neutral axis to a point in the section\\*
 \end{equation}
 \begin{equation}
     \sigma_x=-\frac{My}{Ae(R-y)}
+\end{equation}
+\subsection{Factor of Safety}
+\begin{equation}
+    \sigma_m=K\frac{Mc}{I}
+\end{equation}
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth]{Fig_4_24.png}
+\end{Figure}
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth]{Fig_4_25.png}
+\end{Figure}
+\subsubsection{Equation for Force on a Single Area Within a T Section}
+\begin{equation}
+    F=\int dF=-\int\frac{My}{I}dA=-\frac{M}{I}\int ydA=-\frac{M}{I}\bar{y}*A*
 \end{equation}
 \subsection{Additional Notes}
 Area, width, and moment of inertia for W shapes should be given on a test or found in appendix c of textbook.\\*

@@ -6,9 +6,12 @@
 \usepackage{lipsum}
 
 \usepackage{calc, ifthen,hyperref, gensymb, comment, textcomp}
-\usepackage{amsmath,amsthm,amsfonts,amssymb,geometry}
+
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+
 \usepackage{color,graphicx,overpic}
 
+\usepackage{geometry}
 % This sets page margins to .5 inch if using letter paper, and to 1cm
 % if using A4 paper. (This probably isn't strictly necessary.)
 % If using another size paper, use default 1cm margins.
@@ -38,9 +41,10 @@
 \raggedright
 \footnotesize
 
+
 % Area Above Columns
 \begin{center}
-     \Large{\underline{Heat Transfer - Zak Olech - 9/19/2019}}
+     \Large{\underline{Heat Transfer - Zak Olech - 9/26/2019}}
 \end{center}
 \begin{multicols}{3}
 
@@ -52,29 +56,86 @@
 \setlength{\multicolsep}{1pt}
 \setlength{\columnsep}{2pt}
 
-\begin{comment}
-\section{Variables (Alphbetical By Variable)}
-
 
 % -----------------------------------------------------------------------
 \section{General Information}
 \subsection{Conversion Factors}
 
 \subsection{Process}
-1 - Assumptions\\*
-2 - Properties\\*
+0 - Known\\*
+1 - Find\\*
+2 - Schematic\\*
+3 - Assumptions\\*
 3 - Analysis\\*
-\subsection{Assumptions}
 \subsection{Metric Prefix}
 \begin{Figure}
     \centering
     \includegraphics[width=\linewidth, height=8cm]{SI_Prefix.png}
 \end{Figure}
 
+\subsection{Geometric Relationships}
+\subsubsection{Circle}
+\begin{equation}
+    \pi r^2
+\end{equation}
+\begin{equation}
+    \pi r^2/4
+\end{equation}
+
+\subsection{Variables (Alphbetical By Variable)}\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth]{Symbols_1.png}
+\end{Figure}
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth]{Symbols_2.png}
+\end{Figure}
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth]{Symbols_3.png}
+\end{Figure}
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth]{Symbols_4.png}
+\end{Figure}
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth]{Symbols_5.png}
+\end{Figure}
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth]{Symbols_6.png}
+\end{Figure}
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth]{Symbols_7.png}
+\end{Figure}
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth]{Symbols_8.png}
+\end{Figure}
+
 \section{Chapter 1 - Introduction}
 \subsection{1 - What and how}
 \subsection{2 - Physical Origins and Rate Equations}
 \subsection{3 - Relationship to Thermodynamics}
+\subsubsection{Thermal and Mechanical Energy Equation at an Instat (t)}
+\begin{equation}
+    \delta E_{\text{st}}=E_\text{in}-E_\text{out}+E_\text{gen}
+\end{equation}
+\begin{equation}
+    \dot{E_{\text{st}}}=\frac{dE_\text{st}}{dt}=\dot{E}_\text{in}-\dot{E}_\text{out}+\dot{E}_\text{gen}
+\end{equation}
+\subsubsection{Simplified Steady-Flow Thermal Energy Equation}
+\begin{equation}
+    q=\dot(m)c_p(T_\text{out}-T_\text{in})
+\end{equation}
+\subsection{General Heat Transfer Relationships}
+Multiple equations 1.1, 1.3a, and 1.7 by A if you need to calculate per unit area.
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth]{Table_1_5.png}
+\end{Figure}
 %\subsection{4 - Units and Dimensions}
 %\subsection{5 - Analysis of Heat Transfer Problems: Methodology}
 %\subsection{6 - Relevance of Heat Transfer}
@@ -96,9 +157,9 @@
     \dot{q}=\frac{\dot{E}_g}{\forall}=\frac{I^2R_e}{\forall}
 \end{equation}
 \subsubsection{Absorption of Radiation}
-\begin{equation}
-     \dot{q}\varproptoe^{-\alpha x}
-\end{equation}
+%\begin{equation}
+%     \dot{q}\varproptoe^{-\alpha x}
+%\end{equation}
 \subsubsection{The Plane Wall}
 Heat Equation\\*
 \begin{equation}
@@ -111,7 +172,7 @@ Symmetric Surface Conditions\\*
 \subsubsection{Radial Systems}
 Cylindrical (Tube) Wall\\*
 Solid Cylinder (Circular Rod)\\*
-- Heat Equation (Cylindrical)
+- Heat Equation (Cylindrical)\\*
 Spherical Wall (Shell)\\*
 Solid Sphere\\*
 - Heat Equation (Spherical)\\
@@ -126,6 +187,11 @@ Solid Sphere\\*
 %\subsection{8 - Thermoelectric Power Generation}
 %\subsection{9 - Micro- and Nanoscale Conduction}
 
+% Example Figure
+%\begin{Figure}
+%    \centering
+%    \includegraphics[width=\linewidth]{RankineCycleProcess.png}
+%\end{Figure}
 
 % References
 %\rule{0.3\linewidth}{0.25pt}
