@@ -415,7 +415,28 @@ Only statically determinate beams are considered in this chapter.
     \includegraphics[width=\linewidth]{F_5_22.png}
 \end{Figure}
 \subsubsection{Relationships Between Load, Shear, and Bending Moment}
+\subsubsection{Shear and Bending Moment Relationships}
+\begin{equation}
+    \frac{dV}{dx}=-w
+\end{equation}
+\begin{equation}
+    \frac{dM}{dx}=V
+\end{equation}
+\subsubsection{Integrated Form of Relationship}
+\begin{equation}
+    V_D-V_C=-(\text{area under load curve between C and D})
+\end{equation}
+\begin{equation}
+    M_D-M_C=\text{area under shear curve between C and D}
+\end{equation}
 \subsubsection{Design of Prismatic Beams}
+\begin{equation}
+    S_\text{min}=\frac{\abs{M}_\text{max}}{\sigma_\text{all}}
+\end{equation}
+Section Modulus of Rectangular Cross Section
+\begin{equation}
+    S=\frac{1}{6}bh^2
+\end{equation}
 
 % Example Figure
 %\begin{Figure}

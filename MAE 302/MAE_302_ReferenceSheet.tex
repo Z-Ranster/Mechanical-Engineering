@@ -55,66 +55,15 @@
 \setlength{\multicolsep}{1pt}
 \setlength{\columnsep}{2pt}
 
-\begin{comment}
-\section{Variables (Alphbetical By Variable)}
-\begin{equation}
-    A=\text{area}
-\end{equation}
-\begin{equation}
-    \chi=\text{exergy}
-\end{equation}
-\begin{equation}
-    E=\text{energy}=U+KE+PE
-\end{equation}
-\begin{equation}
-    h=\text{enthalpy}
-\end{equation}
-\begin{equation}
-    k=\text{Vapor-Liquid Equilibrium Point}
-\end{equation}
-\begin{equation}
-    m = \text{mass}
-\end{equation}
-\begin{equation}
-    \dot{m}=\rho*\dot{V}=\text{mass flow rate}
-\end{equation}
-\begin{equation}
-    P=\text{pressure}
-\end{equation}
-\begin{equation}
-    q= \text{heat}
-\end{equation}
-\begin{equation}
-    \rho = \frac{m}{v}= \text{density}
-\end{equation}
-\begin{equation}
-    S= \text{entropy}
-\end{equation}
-\begin{equation}
-    T= \text{temperature}
-\end{equation}
-\begin{equation}
-    u= \text{internal energy}
-\end{equation}
-\begin{equation}
-    V= \text{volume}
-\end{equation}
-\begin{equation}
-    \vec{V}= \text{velocity}
-\end{equation}
-\begin{equation}
-    \vee = \frac{V}{m}=\frac{1}{\rho}= \text{specific volume}
-\end{equation}
-\begin{equation}
-    W=\text{work}
-\end{equation}
-\begin{equation}
-    x= \text{quality}
-\end{equation}
-\begin{equation}
-    z=\text{height from an axis}
-\end{equation}
-\end{comment}
+\section{Nomenclature}
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth, height=9cm]{Nomenclature_1.png}
+\end{Figure}
+\begin{Figure}
+    \centering
+    \includegraphics[width=\linewidth, height=9cm]{Nomenclature_2.png}
+\end{Figure}
 
 % -----------------------------------------------------------------------
 \section{General Information}
@@ -134,19 +83,19 @@
 \section{Physically Meaningful Formulas}
 \subsection{Mass Balance}
 \begin{equation}
-    m_{in}-m_{out}=\Delta m_{system}
+    m_\text{in}-m_\text{out}=\Delta m_\text{system}
 \end{equation}
 \subsection{Energy Balance}
 \begin{equation}
-    E_{in}-E_{out}=\Delta E_{system}
+    E_\text{in}-E_\text{out}=\Delta E_\text{system}
 \end{equation}
 \subsection{Entropy Balance}
 \begin{equation}
-    S_{in}-S_{out}+S_{gen}=\Delta S_{system}
+    S_\text{in}-S_\text{out}+S_\text{gen}=\Delta S_\text{system}
 \end{equation}
 \subsection{Exergy Balance}
 \begin{equation}
-    X_{in}-X_{out}=X_{destroyed}=\Delta X_{system}
+    X_\text{in}-X_\text{out}=X_\text{destroyed}=\Delta X_\text{system}
 \end{equation}
 
 \section{Chapter 1 - Introduction and Basic Concepts}
@@ -726,43 +675,88 @@ Kelvin-Plank Statement, Clausius Statement
 \begin{equation}
     \text{COP}_{\text{rev,absorption}}=\nu_{\text{th,rev}}\text{COP}_{\text{R,rev}}=(1-\frac{T_0}{T_s})(\frac{T_L}{T_0-T_L})
 \end{equation}
-%\subsection{1 Refrigerators and Heat Pumps}
-%\subsection{2 The Reversed Carnot Cycle}
-%\subsection{3 - The Ideal Vapor-Compression Refrigeration Cycle}
-%\subsubsection{4 - Actual Vapor-Compression Refrigeration Cycle}
-%\subsection{5 - Second-Law Analysis of Vapor-compression Refrigeration Cycle}
-%\subsection{6 - Selecting the Reight Refrigerant}
-%\subsection{7 - Heat Pump System}
-%\subsection{8 - Innovative Vapor-Compression Refrigeration Systems}
-%\subsection{9 - Gas Refrigeration Cycles}
-%\subsection{10 - Absorption Refrigeration Systems}
+\begin{comment}
+\subsection{1 Refrigerators and Heat Pumps}
+\subsection{2 The Reversed Carnot Cycle}
+\subsection{3 - The Ideal Vapor-Compression Refrigeration Cycle}
+\subsubsection{4 - Actual Vapor-Compression Refrigeration Cycle}
+\subsection{5 - Second-Law Analysis of Vapor-compression Refrigeration Cycle}
+\subsection{6 - Selecting the Reight Refrigerant}
+\subsection{7 - Heat Pump System}
+\subsection{8 - Innovative Vapor-Compression Refrigeration Systems}
+\subsection{9 - Gas Refrigeration Cycles}
+\subsection{10 - Absorption Refrigeration Systems}
+\end{comment}
 
-\section{Chapter 12}
-
-\section{Chapter 13}
+\begin{comment}
+\section{Chapter 12 - Thermodynamic Property Relations}
+\section{Chapter 13 - Gas Mixtures}
+\end{comment}
 
 \section{Chapter 14 - Gas-Vapor Mixtures and Air-Conditioning}
 \subsection{1 - Dry and Atomspheric Air}
 \subsection{2 - Specific and Relative Humidity of Air}
 \subsection{Absolute or Specific Humidity (Humidity Ratio)}
 Dry Air $\rightarrow$ $\omega$=0
-\begin{equation}
-    \omega=\frac{m_v}{m_a}=\text{kg water vapor/kg dry air}
-\end{equation}
+\begin{multline}
+    \omega=\frac{m_v}{m_a}=\text{kg water vapor/kg dry air} \\
+    =\frac{P_vVM_v/(R_uT)}{P_aVM_a/(R_uT)}=\frac{P_vM_v}{P_aM_a} \\
+    = \phi\frac{P_v}{100-P_v}
+\end{multline}
 \subsubsection{Relative Humidity}
 \begin{equation}
-    \psi=\frac{m_v}{m_g}=\frac{P_v\vee/R_vT}{P_g\vee/R_VT}=\frac{P_v}{P_g}
+    \phi=\frac{m_v}{m_g}=\frac{P_v\vee/R_vT}{P_g\vee/R_VT}=\frac{P_v}{P_g}
+\end{equation}
+\subsubsection{Volume of mixture per mass of dry air, V}
+\begin{equation}
+    v=\frac{V}{m_a}=\frac{m_mR_mT_m/P_m}{m_a}=v_a=\frac{R_aT_m}{P_a}
+\end{equation}
+\subsubsection{Mass of Mixture}
+\begin{equation}
+    m=m_a+m_v=m_a(1+\frac{m_v}{m_a})=m_a(1+\omega)
+\end{equation}
+\subsubsection{Mass flow rate of dry air}
+\begin{equation}
+    \dot{m}_a=\frac{\dot{V}}{v}=\frac{kg_a}{s}
+\end{equation}
+\subsubsection{Enthalpy of mixture per mass dry air, h}
+\begin{equation}
+    h=\frac{H_m}{m_a}=\frac{H_a+H_v}{m_a}=\frac{m_ah_a+m_vh_v}{m_a}=h_a+\omega h_v
 \end{equation}
 \subsection{3 - Dew-Point Temperature}  
 \subsection{4 - Adiabatic Saturation and Wet-Bulb Temperatures}
 \subsubsection{5 - The Psychrometric Chart}
-
+\color{red}
+The enthalpy read from the psychrometric chart is the total enthalpy of the air-vapor mixture per unit mass of DRY air $h=H/m_a=h_a+\omega h_v$.
+\color{black}
 
 \section{Chapter 15 - Chemical Reactions}
+\subsection{Balancing Equations}
+Mole numbers are not conserved, but we have conserved the mass on a total basis as well as a specie basis.
 \subsection{1 - Fuels and Combustion}
+\subsection{Air-Fuel Ratio}
+\begin{equation}
+    \text{AF}=\frac{m_\text{air}}{m_\text{fuel}}=\frac{\text{kmol air}}{\text{kmol fuel}}
+\end{equation}
 \subsection{2 - Theoretical and Actual Combustion Processes}
 \subsection{3 - Enthalpy of Formation and Enthalpy of Combustion}
+\subsubsection{General Notes:}
+\begin{itemize}
+    \item Reference starting slides 22 of summary ppt.
+    \item Think about conservation of energy for a steady-flow combustion process.
+    \item Enthalpy of elements or their stable compound is defined to be ZERO at 25$\degree$C (298 K) and 1 atm (.1 MPa)
+    \item Enthalpy of formation tabulated in Table A-26
+    \item Enthalpy of formation of elements found naturally as diatomic elements, is defined to be zero.
+\end{itemize}
+\begin{equation}
+    Q_\text{net}=\bar{H}\degree_f
+\end{equation}
+\begin{equation}
+    \bar{h}=\bar{h}\degree_f+(\bar{h}_T-\bar{h}\degree)
+\end{equation}
 \subsection{4 - First-Law Analysis of Reacting Systems}
+\subsubsection{Steady-Flow Systems}
+\subsubsection{Closed Systems}
 \subsection{5 - Adiabatic Flame Temperature}
 \subsection{6 - Entropy Change of Reacting Systems}
 \subsection{7 - Second-Law Analysis of Reacting Systems}
